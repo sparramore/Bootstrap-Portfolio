@@ -57,7 +57,7 @@ h3 {
   z-index: 99;
   width: 100%;
   margin: 0 0 30px;
-  overflow: auto;
+  overflow: visible;
   color: #fff;
   background: #fff;
   border-bottom: 2px solid #ccc;
@@ -65,7 +65,7 @@ h3 {
 
 #logo {
   float: left;
-  width: 250px;
+  width: 100%;
   height: 90px;
   font-family: Georgia, Times, "Times New Roman", serif;
   font-size: 30px;
@@ -79,7 +79,7 @@ h3 {
 
 nav {
   float: right;
-  margin-top: 25px;
+  /* margin-top: 25px; */
 }
 
 nav a {
@@ -129,7 +129,7 @@ h3, h2 {
   width: 100%;
   max-width: 960px;
   padding: 30px;
-  margin: 0 0 40px;
+  margin: 0 0 0px;
   background: #fff;
   border: 1px solid #ddd;
 }
@@ -206,6 +206,14 @@ textarea {
 textarea {
   height: 200px;
 }
+
+@media screen and (max-width: 640px)
+{
+  nav
+  {
+    float: none;
+  }
+} 
 
 input[type=submit] {
   padding: 10px 30px;
